@@ -68,6 +68,7 @@ const images = [
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
+
 const galleryContainer = document.querySelector(".gallery");
 const createGalleryMarkup = (images) => {
     return images.map(({ preview, original, description }) => `
@@ -86,6 +87,8 @@ const lightbox = new SimpleLightbox('.gallery a', {
     captionPosition: 'bottom',
     captionDelay: 250,
 });
+
+
 
 
 
